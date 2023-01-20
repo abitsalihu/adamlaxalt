@@ -1,0 +1,54 @@
+.donate {
+  border: none;
+  background: $yellow-primary;
+  font-family: sans-serif;
+  padding: 10px 20px;
+  font-size: 1.15rem;
+  font-weight: 200;
+  color: $white-primary;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  & > a {
+    color: $black-primary;
+  }
+
+  &-f {
+    width: 200px;
+  }
+
+  &-nd {
+    background: $blue-primary;
+    width: auto;
+
+    & > a {
+      color: $white-primary;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.adam {
+  color: $blue-primary;
+  font-weight: 900;
+}
+
+.line {
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  background-color: $black-primary;
+  left: 0px;
+  bottom: 0px;
+  transform-origin: left;
+  transition: 0.75s ease;
+}
+
+@media screen and (min-width: 700px) {
+  .donate {
+    &-f {
+      width: 175px;
+    }
+  }
+}
