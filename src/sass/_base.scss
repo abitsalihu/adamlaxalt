@@ -2,9 +2,9 @@
 
 $white-primary: #f4f4f8;
 $grey-primary: #e6e6ea;
-$red-primary: #e91c22;
+$red-primary: #e54449;
 $blue-primary: #405382;
-$blue-secondary: #2ab7ca;
+$blue-secondary: #2a5dca;
 $yellow-primary: #fed766;
 $black-primary: #2e282a;
 
@@ -31,6 +31,7 @@ body {
   font-family: "DM Sans", sans-serif;
   isolation: isolate;
   background: $white-primary;
+  background: $blue-primary;
 
   // background-color: red;
 }
