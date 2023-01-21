@@ -1,17 +1,19 @@
 .donate {
   border: none;
+  background: $red-primary;
   background: $yellow-primary;
   font-family: sans-serif;
   padding: 10px 20px;
   font-size: 1.15rem;
   font-weight: 400;
-  color: $white-primary;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
   text-transform: uppercase;
   cursor: pointer;
   letter-spacing: 1px;
 
   & > a {
+    color: $white-primary;
     color: $black-primary;
   }
 
@@ -44,6 +46,19 @@
   bottom: 0px;
   transform-origin: left;
   transition: 0.75s ease;
+}
+
+.involved {
+  width: 20px;
+  height: 20px;
+
+  fill: black;
+  color: black;
+  position: absolute;
+  transform: rotate(180deg);
+  right: -5px;
+  z-index: 99;
+  top: 12.5px;
 }
 
 @media screen and (min-width: 700px) {

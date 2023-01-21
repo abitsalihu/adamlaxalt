@@ -51,17 +51,19 @@
 
   &__links {
     display: flex;
+    height: 40px;
 
+    padding-top: 7.5px;
     display: none;
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
     display: none;
 
     & > li {
-      font-size: 2rem;
+      font-size: 1.75rem;
 
       & > a,
       & > a:active,
@@ -79,6 +81,42 @@
       & > a:hover .line {
         width: 100%;
       }
+    }
+
+    &--involved {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+      margin-top: -10px;
+      height: 30px;
+      width: 165px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.2s ease;
+      padding: 10px;
+      border-radius: 0px 0px 10px 10px;
+
+      & > a,
+      & > a:active,
+      & > a:visited {
+        color: $black-primary;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        position: relative;
+        font-size: 1.75rem;
+        display: flex;
+      }
+
+      & > a:hover .line {
+        width: 100%;
+      }
+    }
+
+    &--involved:hover {
+      height: 100%;
+      background: $white-primary;
     }
   }
 
@@ -144,6 +182,10 @@
 .th-animation {
   display: none;
   opacity: 0;
+}
+
+.active--line-link {
+  width: 100%;
 }
 
 @media screen and (min-width: 650px) {
