@@ -22,10 +22,10 @@ const showNav = function () {
 
 navBTN.addEventListener("click", showNav);
 
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 50) {
-    nav.style.background = "#f4f4f8";
-  } else {
-    nav.style.background = "transparent";
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (window.pageYOffset > 50) {
+//     nav.style.background = "#f4f4f8";
+//   } else {
+//     nav.style.background = "transparent";
+//   }
+// });

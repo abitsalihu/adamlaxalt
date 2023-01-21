@@ -4,11 +4,12 @@
   font-family: sans-serif;
   padding: 10px 20px;
   font-size: 1.15rem;
-  font-weight: 200;
+  font-weight: 400;
   color: $white-primary;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-transform: uppercase;
   cursor: pointer;
+  letter-spacing: 1px;
 
   & > a {
     color: $black-primary;
