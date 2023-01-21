@@ -2,6 +2,7 @@ const nav = document.querySelector(".nav");
 const navBTN = document.querySelector(".nav__btn");
 const navLinks = document.querySelector(".nav__links--m");
 const body = document.querySelector("body");
+const navGetInvolvedLinks = document.querySelectorAll(".nav__links--involved");
 //! FUNCTIONs
 
 const showNav = function () {
@@ -15,6 +16,8 @@ const showNav = function () {
   //   }, 1000);
   // } else {
   navLinks.classList.toggle("nav--links-active");
+
+  navGetInvolvedLinks.forEach((e) => e.classList.remove("height"));
   // }
 };
 
@@ -22,10 +25,14 @@ const showNav = function () {
 
 navBTN.addEventListener("click", showNav);
 
-// window.addEventListener("scroll", () => {
-//   if (window.pageYOffset > 50) {
-//     nav.style.background = "#f4f4f8";
-//   } else {
-//     nav.style.background = "transparent";
-//   }
-// });
+navGetInvolvedLinks.forEach((e) =>
+  e.addEventListener("click", (e) => {
+    console.log(e.target);
+    if (body.clientWidth < 850) {
+      console.log("success");
+      e.target.closest(".nav__links--involved").classList.toggle("height");
+    } else {
+      console.log("fail");
+    }
+  })
+);

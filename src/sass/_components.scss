@@ -21,7 +21,7 @@
     width: 200px;
   }
 
-  &-nd {
+  &-merch {
     background: $blue-primary;
     width: auto;
 
@@ -43,7 +43,7 @@
   height: 1.5px;
   background-color: $black-primary;
   left: 0px;
-  bottom: 0px;
+  bottom: -2px;
   transform-origin: left;
   transition: 0.75s ease;
 }
@@ -56,9 +56,13 @@
   color: black;
   position: absolute;
   transform: rotate(180deg);
-  right: -5px;
+  right: 5px;
   z-index: 99;
-  top: 12.5px;
+  top: 10.5px;
+}
+
+.display--merch {
+  display: none;
 }
 
 @media screen and (min-width: 700px) {
@@ -66,5 +70,11 @@
     &-f {
       width: 175px;
     }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .display--merch {
+    display: flex;
   }
 }

@@ -63,7 +63,7 @@
     display: none;
 
     & > li {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
 
       & > a,
       & > a:active,
@@ -98,6 +98,10 @@
       padding: 10px;
       border-radius: 0px 0px 10px 10px;
 
+      & > li {
+        font-size: 1.5rem;
+      }
+
       & > a,
       & > a:active,
       & > a:visited {
@@ -105,18 +109,18 @@
         text-transform: uppercase;
         letter-spacing: 1.5px;
         position: relative;
-        font-size: 1.75rem;
         display: flex;
       }
 
       & > a:hover .line {
         width: 100%;
       }
-    }
 
-    &--involved:hover {
-      height: 100%;
-      background: $white-primary;
+      & > a:nth-child(2),
+      & > a:nth-child(3) {
+        font-size: 1.3rem;
+        color: $black-primary;
+      }
     }
   }
 
@@ -143,7 +147,7 @@
       gap: 30px;
 
       & > li {
-        font-size: 2rem;
+        font-size: 1.5rem;
 
         & > a,
         & > a:active,
@@ -152,6 +156,7 @@
           text-align: center;
           text-transform: uppercase;
           letter-spacing: 2.5px;
+          position: relative;
         }
       }
     }
@@ -188,6 +193,10 @@
   width: 100%;
 }
 
+.height {
+  height: 100%;
+}
+
 @media screen and (min-width: 650px) {
   .nav {
     padding: 20px 30px;
@@ -219,6 +228,11 @@
       display: flex;
       gap: 30px;
       margin-right: 30px;
+
+      &--involved:hover {
+        height: 100%;
+        background: $white-primary;
+      }
     }
   }
 }
