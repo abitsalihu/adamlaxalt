@@ -13,7 +13,7 @@
 
     <title>Adam Paul Laxalt</title>
   </head>
-  <body>
+  <body class="container">
     <nav class="nav">
       <div class="nav__logo">
         <a href="../../index.html">
@@ -75,12 +75,10 @@
             </div>
           </li>
         </ul>
-        <button class="donate donate-merch display--merch">
-          <a href="./merchStore.html">Merch Store!</a>
-        </button>
-        <button class="donate donate-f">
-          <a href="./donate.html">Donate now!</a>
-        </button>
+        <a class="donate donate-merch display--merch" href="./merchStore.html"
+          >Merch Store!</a
+        >
+        <a class="donate donate-f" href="./donate.html">Donate now!</a>
       </div>
 
       <div class="nav__links--m">
@@ -115,11 +113,37 @@
               </svg>
             </div>
           </li>
-          <button class="donate donate-merch">
-            <a href="./merchStore.html">Merch Store!</a>
-          </button>
+          <a class="donate donate-merch" href="./merchStore.html"
+            >Merch Store!</a
+          >
         </ul>
       </div>
     </nav>
+
+    <main class="volunteer">
+      <div class="volunteer_text">
+        <h1>Start Volunteering</h1>
+        <p>
+          We are visiting homes, making calls, assembling yard signs, and having
+          coffees. Help us spread the news by joining our campaign today.
+        </p>
+      </div>
+      <div class="volunteer_form">
+        <h3>Volunteer Form</h3>
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <input type="text" placeholder="Email" />
+        <input type="number" placeholder="Phone Number" />
+        <button class="volunteer_btn">Submit</button>
+      </div>
+      <div class="volunteer_img">
+        <img src="../images/volunteer.jpg" alt="" />
+        <div class="volunteer_img-overlay"></div>
+      </div>
+    </main>
+    <footer class="copyrights v-copyrights">
+      All &#169; copy-rights for this mockup are reserved for University
+      purposes 2023 - 2024
+    </footer>
   </body>
 </html>

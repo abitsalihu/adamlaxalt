@@ -1,0 +1,130 @@
+.volunteer {
+  min-height: 100%;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &_text {
+    & > h1 {
+      font-size: 2.5rem;
+      background: -webkit-linear-gradient($black-primary, $red-primary 65%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    & > p {
+      font-size: 1.7rem;
+    }
+  }
+
+  &_img {
+    border-radius: 2.5px;
+    position: relative;
+    isolation: isolate;
+    box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
+
+    & > img {
+      border-radius: 2.5px;
+      z-index: 1;
+    }
+
+    &-overlay {
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: hsla(0, 88%, 61%, 0.15);
+    }
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & > h3 {
+      color: $blue-primary;
+      font-size: 2rem;
+    }
+
+    & > input {
+      padding: 10px 15px;
+      font-size: 1.3rem;
+      // letter-spacing: 1px;
+      // font-family: sans-serif;
+      border: none;
+      background: $red-primary;
+      color: $white-primary;
+      font-weight: 100;
+      border-radius: 2.5px;
+
+      &::placeholder {
+        font-size: 1.2rem;
+        color: $white-primary;
+        font-weight: 200;
+      }
+
+      &:focus {
+        outline: 2px solid $blue-primary;
+      }
+    }
+  }
+
+  &_btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    background: $blue-primary;
+    color: $white-primary;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .volunteer {
+    width: 600px;
+
+    &_text {
+      & > h1 {
+        font-size: 4rem;
+      }
+
+      & > p {
+        font-size: 2rem;
+      }
+    }
+    &_form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, auto);
+      & > h3 {
+        grid-column: 1/3;
+        color: $blue-primary;
+        font-size: 4rem;
+      }
+
+      & > input {
+        font-size: 1.5rem;
+        // letter-spacing: 1px;
+        border: 1px solid green;
+        border: none;
+        background: $red-primary;
+        color: $white-primary;
+        font-weight: 200;
+        border-radius: 2.5px;
+      }
+      & > input:nth-of-type(3) {
+        grid-column: 1/3;
+      }
+      & > input:nth-of-type(4) {
+        grid-column: 1/3;
+      }
+    }
+    &_btn {
+      grid-column: 1/3;
+    }
+  }
+}
