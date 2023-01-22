@@ -664,3 +664,44 @@ a:visited {
         grid-column: 1/3; }
     .volunteer_btn {
       grid-column: 1/3; } }
+
+.organization {
+  width: 100%;
+  padding: 10px;
+  font-family: sans-serif;
+  text-align: center; }
+  .organization > h1 {
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+
+.endorsments {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; }
+  .endorsments_card {
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    width: 250px;
+    background: #f4f4f8;
+    border-radius: 5px;
+    height: 330px; }
+    .endorsments_card--logo {
+      height: 250px;
+      overflow: hidden;
+      border-radius: 5px 5px 0px 0px;
+      background: white; }
+      .endorsments_card--logo > img {
+        width: 100%;
+        border-radius: 5px 5px 0px 0px; }
+    .endorsments_card--title {
+      border-top: 3px solid white;
+      padding: 15px;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      text-align: center; }

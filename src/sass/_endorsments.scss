@@ -1,0 +1,57 @@
+.organization {
+  width: 100%;
+  padding: 10px;
+  font-family: sans-serif;
+  text-align: center;
+
+  & > h1 {
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+}
+
+.endorsments {
+  width: 100%;
+  padding: 10px;
+  //   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &_card {
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+
+    width: 250px;
+    // border: 1px solid green;
+    background: $white-primary;
+    border-radius: 5px;
+    height: 330px;
+    &--logo {
+      height: 250px;
+      overflow: hidden;
+      border-radius: 5px 5px 0px 0px;
+      background: white;
+      //   width: 200px;
+      //   height: 200px;
+
+      & > img {
+        width: 100%;
+        border-radius: 5px 5px 0px 0px;
+      }
+    }
+
+    &--title {
+      border-top: 3px solid white;
+      padding: 15px;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      text-align: center;
+      //   color: $red-primary;
+    }
+  }
+}
