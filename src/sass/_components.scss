@@ -11,6 +11,7 @@
   text-transform: uppercase;
   cursor: pointer;
   letter-spacing: 1px;
+  transition: all 0.25s ease;
 
   & > a {
     color: $white-primary;
@@ -22,6 +23,8 @@
   }
 
   &-merch {
+    box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
+
     background: $blue-primary;
     width: auto;
 
@@ -29,6 +32,10 @@
       color: $white-primary;
       letter-spacing: 1px;
     }
+  }
+  &:active {
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    transform: translateY(2px);
   }
 }
 
@@ -53,7 +60,7 @@
   height: 20px;
 
   fill: black;
-  color: black;
+
   position: absolute;
   transform: rotate(180deg);
   right: 5px;
@@ -61,8 +68,43 @@
   top: 10.5px;
 }
 
+.check {
+  width: 10px;
+  height: 10px;
+  // border: 1px solid blue;
+
+  fill: $white-primary;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  pointer-events: none;
+}
+
+.checkout-icon {
+  width: 25px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.gpay-icon {
+  fill: $red-primary;
+  margin-right: 3px;
+  font-size: 2rem;
+}
+
 .display--merch {
   display: none;
+}
+
+.copyrights {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 700px) {
@@ -76,5 +118,10 @@
 @media screen and (min-width: 1000px) {
   .display--merch {
     display: flex;
+  }
+  .donate {
+    &:hover {
+      transform: translateY(-2px);
+    }
   }
 }

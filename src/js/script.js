@@ -3,6 +3,8 @@ const navBTN = document.querySelector(".nav__btn");
 const navLinks = document.querySelector(".nav__links--m");
 const body = document.querySelector("body");
 const navGetInvolvedLinks = document.querySelectorAll(".nav__links--involved");
+const donationBtns = document.querySelectorAll(".donation_btn");
+const donationMonthlyBtns = document.querySelectorAll(".donation_monthly--btn");
 //! FUNCTIONs
 
 const showNav = function () {
@@ -34,5 +36,22 @@ navGetInvolvedLinks.forEach((e) =>
     } else {
       console.log("fail");
     }
+  })
+);
+
+donationBtns.forEach((e) =>
+  e.addEventListener("click", (e) => {
+    console.log(e.target);
+    // if (e.target.classList.contains("check")) return;
+    donationBtns.forEach((e) => e.classList.remove("btn-active"));
+    e.target.classList.add("btn-active");
+  })
+);
+
+donationMonthlyBtns.forEach((e) =>
+  e.addEventListener("click", (e) => {
+    console.log(e.target);
+    donationMonthlyBtns.forEach((e) => e.classList.remove("btn-active"));
+    e.target.classList.add("btn-active");
   })
 );

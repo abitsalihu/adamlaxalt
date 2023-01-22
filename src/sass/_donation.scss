@@ -1,0 +1,271 @@
+.donation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  gap: 20px;
+
+  &_text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & > h1 {
+      color: $red-primary;
+      font-size: 2rem;
+    }
+
+    & > p {
+      font-size: 1.3rem;
+    }
+    // text-align: center;
+  }
+
+  &_img {
+    display: none;
+    position: relative;
+
+    &-overlay {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: $yellow-primary;
+      opacity: 0.1;
+    }
+  }
+
+  &_amount {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    // border: 1px solid blue;
+
+    &--ftext {
+      //   border: 1px solid yellow;
+      & > h3 {
+        color: $red-primary;
+        font-size: 1.5rem;
+      }
+
+      & > p {
+        font-size: 1.3rem;
+      }
+    }
+
+    &--btns {
+      //   width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 7.5px;
+      background: $yellow-primary;
+      padding: 20px 10px;
+      border-radius: 5px;
+    }
+
+    &--monthly {
+      //   border: 1px solid yellow;
+      & > h3 {
+        color: $red-primary;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &_btn {
+    padding: 7.5px 15px;
+    font-size: 1.3rem;
+    background: $white-primary;
+    color: $black-primary;
+    border: none;
+    border-radius: 2.5px;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &_input {
+    padding: 7.5px 15px;
+    font-size: 1.3rem;
+    background: $white-primary;
+    color: $black-primary;
+    width: 75px;
+    border: none;
+    border-radius: 2.5px;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  }
+  &_input:focus {
+    outline: 1.5px solid $red-primary;
+  }
+
+  &_monthly {
+    // border: 1px solid blue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    &--btn {
+      padding: 10px 15px;
+      box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+      border: none;
+      background-color: $white-primary;
+      border-radius: 2.5px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      cursor: pointer;
+      position: relative;
+    }
+  }
+
+  &_checkout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    &-card {
+      border-radius: 2.5px;
+      border: none;
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: white;
+
+      cursor: pointer;
+    }
+
+    &--paypal {
+      background: $yellow-primary;
+    }
+    &--gpay {
+      background: $black-primary;
+      font-size: 2rem;
+    }
+    &--visa {
+      background: $grey-primary;
+      color: $red-primary;
+    }
+  }
+  &_rules {
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid green;
+    // margin-top: 25px;
+
+    & > h4 {
+      margin-top: 0px;
+      font-size: 2rem;
+    }
+
+    & > ol {
+      //   border: 1px solid blue;
+      padding: 10px;
+
+      font-size: 1.1rem;
+    }
+
+    & > p {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.btn-active {
+  background: $red-primary;
+  color: $white-primary;
+}
+
+@media screen and (min-width: 850px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .donation {
+    width: 850px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+    grid-template-rows: auto auto;
+
+    &_text {
+      & > h1 {
+        font-size: 2rem;
+      }
+
+      & > p {
+        font-size: 1.5rem;
+      }
+    }
+
+    &_amount {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      // border: 1px solid blue;
+
+      &--ftext {
+        //   border: 1px solid yellow;
+        & > h3 {
+          color: $red-primary;
+          font-size: 2rem;
+        }
+
+        & > p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    &_rules {
+      grid-column: 1/3;
+    }
+    &_img {
+      display: inline-block;
+      border-radius: 2.5px;
+    }
+    &_btn {
+      padding: 7.5px 17.5px;
+
+      font-size: 1.5rem;
+    }
+
+    &_rules {
+      & > h4 {
+        font-size: 2.5rem;
+        font-weight: 300;
+      }
+
+      & > ol {
+        font-size: 1.3rem;
+      }
+
+      & > p {
+        font-size: 1.5rem;
+      }
+    }
+
+    &_monthly {
+      &--btn {
+        font-size: 1.4rem;
+      }
+    }
+
+    &_input {
+      font-weight: 800;
+    }
+  }
+  .copyrights {
+    font-size: 1.1rem;
+  }
+}
