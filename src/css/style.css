@@ -683,7 +683,8 @@ a:visited {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px; }
+  gap: 30px;
+  padding-bottom: 30px; }
   .endorsments_card {
     box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
     width: 250px;
@@ -691,17 +692,24 @@ a:visited {
     border-radius: 5px;
     height: 330px; }
     .endorsments_card--logo {
+      padding: 20px;
       height: 250px;
       overflow: hidden;
       border-radius: 5px 5px 0px 0px;
-      background: white; }
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       .endorsments_card--logo > img {
-        width: 100%;
         border-radius: 5px 5px 0px 0px; }
     .endorsments_card--title {
+      height: 80px;
       border-top: 3px solid white;
       padding: 15px;
       font-size: 1.5rem;
       text-transform: uppercase;
       font-weight: 800;
-      text-align: center; }
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
