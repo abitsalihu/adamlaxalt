@@ -857,3 +857,66 @@ a:visited {
       display: flex;
       justify-content: center;
       align-items: center; }
+
+.issues {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; }
+  .issues > h1 {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+
+.abortion {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.7) 0px 2px 8px 0px;
+  background: #e54449; }
+  .abortion_text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
+    .abortion_text > h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #f4f4f8; }
+    .abortion_text > p {
+      color: #f4f4f8;
+      font-size: 1.4rem;
+      letter-spacing: -0.5px;
+      font-weight: 100; }
+  .abortion_img {
+    border-radius: 3px;
+    position: relative; }
+    .abortion_img > img {
+      border-radius: 3px; }
+  .abortion_two {
+    background-color: #405382;
+    margin-bottom: 20px; }
+
+@media screen and (min-width: 1000px) {
+  .issues {
+    width: 1000px; }
+  .abortion {
+    flex-direction: row;
+    padding: 20px; }
+    .abortion_text {
+      padding-right: 20px;
+      width: 60%; }
+      .abortion_text > h2 {
+        font-size: 3rem; }
+      .abortion_text > p {
+        font-size: 1.75rem; } }
