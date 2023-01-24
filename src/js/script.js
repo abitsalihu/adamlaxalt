@@ -3,8 +3,19 @@ const navBTN = document.querySelector(".nav__btn");
 const navLinks = document.querySelector(".nav__links--m");
 const body = document.querySelector("body");
 const navGetInvolvedLinks = document.querySelectorAll(".nav__links--involved");
+
+//? Donations
 const donationBtns = document.querySelectorAll(".donation_btn");
 const donationMonthlyBtns = document.querySelectorAll(".donation_monthly--btn");
+
+//? Merch
+
+const mainImg = document.querySelector(".main-img");
+const modelCon = document.querySelectorAll(".model-con");
+const typeBtn = document.querySelectorAll(".type-btn");
+const sizeBtn = document.querySelectorAll(".size-btn");
+
+let currentImg = "../images/merch/merch-black.jpeg";
 //! FUNCTIONs
 
 const showNav = function () {
@@ -12,15 +23,13 @@ const showNav = function () {
   document.querySelector(".nav__btn-lone").classList.toggle("f-animation");
   document.querySelector(".nav__btn-ltwo").classList.toggle("th-animation");
   document.querySelector(".nav__btn-lthree").classList.toggle("s-animation");
-  // if (nav.classList.contains("nav--active")) {
-  //   setTimeout(() => {
-  //     navLinks.classList.toggle("nav--links-active");
-  //   }, 1000);
-  // } else {
   navLinks.classList.toggle("nav--links-active");
-
   navGetInvolvedLinks.forEach((e) => e.classList.remove("height"));
-  // }
+};
+
+const removeAddClass = function (array, classList, e) {
+  array.forEach((e) => e.classList.remove(`${classList}`));
+  e.classList.add(`${classList}`);
 };
 
 //! EVENT listeners
@@ -41,17 +50,46 @@ navGetInvolvedLinks.forEach((e) =>
 
 donationBtns.forEach((e) =>
   e.addEventListener("click", (e) => {
-    console.log(e.target);
-    // if (e.target.classList.contains("check")) return;
-    donationBtns.forEach((e) => e.classList.remove("btn-active"));
-    e.target.classList.add("btn-active");
+    removeAddClass(donationBtns, "btn-active", e.target);
   })
 );
 
 donationMonthlyBtns.forEach((e) =>
   e.addEventListener("click", (e) => {
-    console.log(e.target);
-    donationMonthlyBtns.forEach((e) => e.classList.remove("btn-active"));
-    e.target.classList.add("btn-active");
+    removeAddClass(donationMonthlyBtns, "btn-active", e.target);
+  })
+);
+
+modelCon.forEach((e) =>
+  e.addEventListener("mouseenter", (e) => {
+    let model = e.target.getAttribute("data-src");
+    mainImg.src = model;
+  })
+);
+
+modelCon.forEach((e) =>
+  e.addEventListener("mouseleave", (e) => {
+    mainImg.src = currentImg;
+  })
+);
+
+modelCon.forEach((e) =>
+  e.addEventListener("click", (e) => {
+    removeAddClass(modelCon, "active-border", e.target);
+    currentImg = e.target.getAttribute("data-src");
+    mainImg.src = e.target.getAttribute("data-src");
+    return currentImg;
+  })
+);
+
+typeBtn.forEach((e) =>
+  e.addEventListener("click", (e) => {
+    removeAddClass(typeBtn, "active", e.target);
+  })
+);
+
+sizeBtn.forEach((e) =>
+  e.addEventListener("click", (e) => {
+    removeAddClass(sizeBtn, "active", e.target);
   })
 );
