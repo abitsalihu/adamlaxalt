@@ -315,7 +315,7 @@
         grid-row: 3/5;
       }
       &-img:nth-child(5) {
-        background-image: url("../images/laxalt-gallery/laxalt-oldPeople.jpeg");
+        background-image: url("../images/laxalt-gallery/laxalt-oldpeople.jpeg");
         grid-column: 6 / 9;
         grid-row: 5/6;
       }
@@ -464,10 +464,10 @@
       &-right {
         border-radius: 0px 5px 5px 0px;
         width: 50%;
-        background-image: url("/src/images/adam-family.jpeg");
+        background-image: url("./src/images/adam-family.jpeg");
 
         &-two {
-          background-image: url("/src/images/economy.jpg");
+          background-image: url("./src/images/economy.jpg");
         }
       }
     }

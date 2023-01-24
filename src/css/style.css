@@ -747,7 +747,7 @@ a:visited {
         grid-column: 6 / -1;
         grid-row: 3/5; }
       .laxalt_right--gallery-img:nth-child(5) {
-        background-image: url("../images/laxalt-gallery/laxalt-oldPeople.jpeg");
+        background-image: url("../images/laxalt-gallery/laxalt-oldpeople.jpeg");
         grid-column: 6 / 9;
         grid-row: 5/6; }
       .laxalt_right--gallery-img:nth-child(6) {
@@ -835,9 +835,9 @@ a:visited {
     .fsection_con-right {
       border-radius: 0px 5px 5px 0px;
       width: 50%;
-      background-image: url("/src/images/adam-family.jpeg"); }
+      background-image: url("./src/images/adam-family.jpeg"); }
       .fsection_con-right-two {
-        background-image: url("/src/images/economy.jpg"); } }
+        background-image: url("./src/images/economy.jpg"); } }
 
 @media screen and (min-width: 1000px) {
   .laxalt {
