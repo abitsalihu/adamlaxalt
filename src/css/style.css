@@ -93,7 +93,6 @@ a:visited {
   height: 20px;
   right: -17.5px;
   top: 2px;
-  z-index: 999;
   fill: #2e282a;
   transform: rotate(90deg);
   animation: infinite 1s ease infinite; }
