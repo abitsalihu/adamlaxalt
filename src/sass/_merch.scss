@@ -55,7 +55,7 @@
         border-radius: 2.5px;
         box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
         transition: all 0.2s ease;
-        border: 2px solid white;
+        border: 1.5px solid white;
 
         & > img {
           border-radius: 2.5px;
@@ -151,7 +151,7 @@
   }
 }
 .active-border {
-  border: 2px solid $red-primary;
+  border: 1.5px solid $red-primary;
 }
 .active {
   background: $red-primary;
