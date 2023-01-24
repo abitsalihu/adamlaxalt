@@ -549,11 +549,128 @@ a:visited {
         font-size: 2rem;
         font-weight: 900; }
 
+.laxalt {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; }
+  .laxalt_title {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center; }
+    .laxalt_title > h1 {
+      font-size: 2rem;
+      font-weight: 100;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    .laxalt_title--red {
+      color: #e54449;
+      color: #ff6464; }
+  .laxalt_left {
+    background-color: #405382;
+    padding: 10px 7.5px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.8) 0px 2px 8px 0px; }
+    .laxalt_left > p {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 1.5rem;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+      color: #f4f4f8; }
+      .laxalt_left > p > span:nth-child(1) > span {
+        font-size: 1.7rem; }
+  .laxalt_right {
+    display: none; }
+
+.america {
+  color: #ff6464;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.background-size {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
 @media screen and (min-width: 850px) {
   .main__title {
     font-size: 4rem; }
     .main__title > h1 > span {
-      font-size: 4rem; } }
+      font-size: 4rem; }
+  .laxalt {
+    width: 1000px;
+    height: fit-content;
+    height: max-content;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 0px;
+    box-shadow: rgba(99, 99, 99, 0.8) 0px 2px 8px 0px; }
+    .laxalt_title > h1 {
+      font-size: 3rem; }
+    .laxalt_left {
+      width: 50%;
+      padding: 25px;
+      border-radius: 5px 0px 0px 5px;
+      box-shadow: rgba(99, 99, 99, 0) 0px 2px 8px 0px; }
+    .laxalt_right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .laxalt_right--gallery {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        gap: 10px; }
+        .laxalt_right--gallery-img:nth-child(1) {
+          background-image: url("../images/laxalt-gallery/laxalt-army.jpeg");
+          grid-column: 1 / 7;
+          grid-row: 1/3; }
+        .laxalt_right--gallery-img:nth-child(2) {
+          border-radius: 0px 5px 0px 0px;
+          background-image: url("../images/laxalt-gallery/laxalt-cruz.jpg");
+          grid-column: 7 / -1;
+          grid-row: 1/3; }
+        .laxalt_right--gallery-img:nth-child(3) {
+          background-image: url("../images/laxalt-gallery/laxalt-donald.jpg");
+          grid-column: 1 / 6;
+          grid-row: 3/6; }
+        .laxalt_right--gallery-img:nth-child(4) {
+          background-image: url("../images/laxalt-gallery/laxalt-oldLady.jpeg");
+          grid-column: 6 / -1;
+          grid-row: 3/5; }
+        .laxalt_right--gallery-img:nth-child(5) {
+          background-image: url("../images/laxalt-gallery/laxalt-oldPeople.jpeg");
+          grid-column: 6 / 9;
+          grid-row: 5/6; }
+        .laxalt_right--gallery-img:nth-child(6) {
+          background-image: url("../images/laxalt-gallery/laxalt-standing.jpg");
+          grid-column: 9/ -1;
+          grid-row: 5/6; }
+        .laxalt_right--gallery-img:nth-child(7) {
+          background-image: url("../images/laxalt-gallery/laxalt-jesus.jpg");
+          grid-column: 1/ 6;
+          grid-row: 6/8; }
+        .laxalt_right--gallery-img:nth-child(8) {
+          background-image: url("../images/laxalt-gallery/laxalt-profile.jpg");
+          grid-column: 6/ -1;
+          grid-row: 6/9; }
+        .laxalt_right--gallery-img:nth-child(9) {
+          background-image: url("../images/laxalt-gallery/laxalt-stagemic.jpg");
+          grid-column: 1/ 6;
+          grid-row: 8/9; }
+        .laxalt_right--gallery-img:nth-child(10) {
+          border-radius: 0px 0px 5px 0px;
+          background-image: url("../images/laxalt-gallery/laxalt-crowd.jpg");
+          grid-column: 1/ -1;
+          grid-row: 9/-1; } }
 
 .donation {
   display: flex;
