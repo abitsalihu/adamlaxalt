@@ -16,7 +16,6 @@
 .endorsments {
   width: 100%;
   padding: 10px;
-  //   border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +27,6 @@
     box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
 
     width: 250px;
-    // border: 1px solid green;
     background: $white-primary;
     border-radius: 5px;
     height: 330px;
@@ -44,9 +42,6 @@
       position: relative;
 
       & > img {
-        // padding: 20px;
-        // width: 100%;
-        // width: 200px;
         border-radius: 5px 5px 0px 0px;
       }
     }

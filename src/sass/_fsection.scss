@@ -9,7 +9,6 @@
 
   &__img {
     width: 100%;
-    // height: auto;
     position: relative;
   }
 
@@ -31,18 +30,14 @@
   }
 
   &__title {
-    // border: 1px solid blue;
     text-transform: uppercase;
     text-align: center;
     width: 100%;
     position: relative;
     gap: -20px;
-
     z-index: 3;
     background: $blue-primary;
-
     font-weight: 500;
-
     font-family: sans-serif;
 
     & > h1 {
@@ -50,13 +45,10 @@
       z-index: 4;
       display: flex;
       flex-direction: column;
-
       color: $white-primary;
       font-size: 1.3rem;
-      // color: $white-primary;
 
       & > span {
-        // border: 1px solid blue;
         color: $red-primary;
         font-size: 2rem;
         font-weight: 900;
@@ -73,8 +65,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // height: 100vh;
-  // padding: 10px;
 
   &_title {
     margin-top: -20px;
@@ -179,7 +169,6 @@
 }
 
 .blob {
-  // border: 1px solid blue;
   position: absolute;
   width: 150px;
   left: -70px;
@@ -226,7 +215,6 @@
 //! finish of landing page
 .laxalt {
   width: 100%;
-  // border: 1px solid red;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -235,7 +223,6 @@
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
-    // border: 1px solid green;
 
     & > h1 {
       font-size: 2rem;
@@ -269,7 +256,6 @@
       & > span:nth-child(1) {
         & > span {
           font-size: 1.7rem;
-          // font-weight: 800;
         }
       }
     }
@@ -373,7 +359,6 @@
 
   .fdonation {
     &_con {
-      // min-width: 550px;
       flex-direction: row;
       gap: 50px;
       padding: 60px;
@@ -381,7 +366,6 @@
       &-left {
         & > h3 {
           font-size: 4rem;
-          // color: $white-primary;
         }
 
         & > h5 {
@@ -390,8 +374,6 @@
       }
       &-right {
         text-align: center;
-        // border: 1px solid blue;
-        // width: 420px;
 
         &--text {
           font-size: 1.15rem;

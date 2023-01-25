@@ -1,12 +1,10 @@
 .gradient-color {
   background-color: $grey-primary;
-  //   background: $red-primary;
 }
 
 .merch {
   padding-top: 20px;
   width: 100%;
-  //   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,11 +34,6 @@
     &--models {
       width: 100%;
       padding: 10px 25px;
-      //   display: grid;
-      //   grid-template-columns: repeat(2, 1fr);
-      //   grid-template-rows: repeat(2, 1fr);
-      //   justify-items: center;
-      //   gap: 10px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;

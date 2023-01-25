@@ -50,13 +50,10 @@
   top: 2px;
   fill: $black-primary;
   transform: rotate(90deg);
-  // transition: all 0.2s ease;
+
   animation: infinite 1s ease infinite;
 }
 
-// .read-link:hover .read-icon {
-//   transform: translateX(5px) rotate(90deg);
-// }
 .adam {
   color: $red-primary;
   font-weight: 900;
@@ -101,7 +98,6 @@
 .check {
   width: 10px;
   height: 10px;
-  // border: 1px solid blue;
 
   fill: $white-primary;
   position: absolute;
